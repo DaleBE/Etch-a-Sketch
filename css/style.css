@@ -1,0 +1,97 @@
+html {
+   box-sizing: border-box;
+   font-family: 'Londrina Sketch', cursive;
+}
+
+body {
+   margin: 0;
+   background-color: #F2BF5E;
+}
+
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 7rem;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+}
+
+button {
+   border: 0.1rem solid yellow;
+   border-radius: 50%;
+   background-color: #F27457;
+   color: blanchedalmond;
+   height: 3rem;
+   width: 3rem;
+}
+
+.mainHeader {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #8C5D6E;
+   color: antiquewhite;
+   height: 5rem;
+   padding-left: 2rem;
+   padding-right: 2rem;
+}
+
+.mainHeader h1 {
+   font-size: 3rem;
+}
+
+.leftInfo {
+   border: 0.15rem solid #F27457;
+   border-radius: 1.5rem;
+   background-color: antiquewhite;
+   height: 25rem;
+   width: 20rem;
+   margin-right: 1rem;
+}
+
+.etchaBody {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   border: 0.2rem solid #F24535;
+   border-radius: 1.5rem;
+   background-color: #F24535;
+   width: 30rem;
+   height: 30rem;
+}
+
+.etchaScreen {
+   margin-top: 2rem;
+   margin-left: 2rem;
+   margin-right: 2rem;
+   background-color: blanchedalmond;
+   height: 25rem;
+   border: 0.2rem solid blanchedalmond;
+   border-radius: 0.5rem;
+}
+
+.etchaControls{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 4rem;
+}
+
+.mainFoot {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 0.15rem solid #8C5D6E;
+   background-color: #8C5D6E;
+   color: antiquewhite;
+   height: 3rem;
+   position: absolute;
+   width: 100%;
+   bottom: 0;
+}
+
+.mainFoot p{
+   font-size: 1.5rem;
+}
+
