@@ -9,21 +9,20 @@
    <link rel="preconnect" href="https://fonts.googleapis.com"> 
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
    <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap" rel="stylesheet">
+   <script src="./javascript/etcha.js" defer></script>
 </head>
 <body>
    <header class="mainHeader">
       <h1>Etcha-Sketcha</h1>
-      <button class="resetButton">Reset</button>
+      <button onclick="resetScreen()" class="resetButton">Reset</button>
    </header>
    <main>
       <div class="leftInfo"></div>
       <div class="etchaBody">
-         <div class="etchaScreen">
-
-         </div>
+         <div class="etchaScreen"></div>
          <div class="etchaControls">
-            <button class="gridSize">Grid</button>
-            <button class="colorScheme">Color</button>
+            <button onclick="getGridNum()" class="gridSize">Grid</button>
+            <button onclick="" class="colorScheme">Color</button>
          </div>
       </div>
    </main>

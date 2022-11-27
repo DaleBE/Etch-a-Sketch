@@ -18,12 +18,17 @@ main {
 }
 
 button {
-   border: 0.1rem solid yellow;
+   border: 0.1rem solid #f2a25c;
    border-radius: 50%;
-   background-color: #F27457;
-   color: blanchedalmond;
+   background-color: #f2a25c;
+   color: black;
    height: 3rem;
    width: 3rem;
+}
+
+button:active {
+   box-shadow: 0 0 0.75rem yellow;
+   background-color: #F27457;
 }
 
 .mainHeader {
@@ -38,7 +43,7 @@ button {
 }
 
 .mainHeader h1 {
-   font-size: 3rem;
+   font-size: 3.2rem;
 }
 
 .leftInfo {
@@ -62,6 +67,7 @@ button {
 }
 
 .etchaScreen {
+   display: grid;
    margin-top: 2rem;
    margin-left: 2rem;
    margin-right: 2rem;
@@ -71,11 +77,18 @@ button {
    border-radius: 0.5rem;
 }
 
+.createdScreen {
+   display: grid;
+   height: 100%;
+   width: 100%;
+   background-color: #EBEBEB;
+}
+
 .etchaControls{
    display: flex;
    justify-content: space-around;
    align-items: center;
-   height: 4rem;
+   height: 4.5rem;
 }
 
 .mainFoot {
@@ -92,6 +105,6 @@ button {
 }
 
 .mainFoot p{
-   font-size: 1.5rem;
+   font-size: 1.75rem;
 }
 
