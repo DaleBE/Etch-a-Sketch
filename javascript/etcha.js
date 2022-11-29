@@ -1,4 +1,8 @@
+const etchaScreen = document.querySelector('.etchaScreen');
 
+const createdScreen = document.createElement('div');
+
+let buttonText;
 
 function getGridNum() {
    
@@ -13,6 +17,7 @@ function getGridNum() {
    } else {
       alert('Please enter a valid number');
    }
+
 };
 
 const createCells = numChoice => {
@@ -42,7 +47,14 @@ function setUpScreen(promptChoice) {
    createGrid(promptChoice);
    createCells(promptChoice);
 
-   applyColor(buttonText);  
+   const allCells = document.querySelectorAll('.cell');
+
+   allCells.forEach(function(cell) {
+      cell.addEventListener('mouseover', 
+                        function() {cell.setAttribute('style', `background-color: ${chooseColor(buttonText)};`)}
+      )
+   })
+   
 };
 
 function resetScreen() {
@@ -56,27 +68,20 @@ function resetScreen() {
    createdScreen.remove();
 };
 
-const applyColor = (buttonText) => {
+const setBlack = () => buttonText = 'Black';
 
-   const allCells = document.querySelectorAll('.cell');
+const setColor = () => buttonText = 'Color';
+
+function chooseColor(buttonText) {
 
    if (buttonText === 'Black') {
-
-      allCells.forEach(function(cell) {
-         cell.addEventListener('mouseover', 
-                           function() {cell.setAttribute('style', 'background-color: black;')}
-         )
-      })
+      return 'black';
    } else if (buttonText === 'Color') {
-      allCells.forEach(function(cell) {
-         cell.addEventListener('mouseover', 
-                           function() {cell.setAttribute('style', `background-color: ${changeToColor()};`)}
-         )
-      })
+      return randomColor();
    }
-};
+}
 
-function changeToColor() {
+function randomColor() {
 
    const colorArray = ['#6F96C8', '#93CBA5', '#F2ED82', '#F27B35', '#F2220F'];
 
@@ -86,10 +91,3 @@ function changeToColor() {
 
    return colorChoice;
 };
-
-
-const colorButton = document.querySelector('.colorButton');
-let buttonText = colorButton.textContent;
-
-const etchaScreen = document.querySelector('.etchaScreen');
-const createdScreen = document.createElement('div');

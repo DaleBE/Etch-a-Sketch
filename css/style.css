@@ -47,12 +47,22 @@ button:active {
 }
 
 .leftInfo {
-   border: 0.15rem solid #F27457;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem;
+   border: 0.25rem solid #F27457;
    border-radius: 1.5rem;
    background-color: antiquewhite;
    height: 25rem;
    width: 20rem;
    margin-right: 1rem;
+   font-family: cursive;
+}
+
+.infoTitle {
+   font-size: 1.5rem;
 }
 
 .etchaBody {

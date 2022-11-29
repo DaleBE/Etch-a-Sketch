@@ -17,12 +17,18 @@
       <button onclick="resetScreen()" class="resetButton">Reset</button>
    </header>
    <main>
-      <div class="leftInfo"></div>
+      <div class="leftInfo">
+         <p class="infoTitle">Welcome to Etcha-Sketcha!</p>
+         <p>This is a simple drawing app that allows you to select a grid size to draw fun pixelated images.</p>
+         <p>Click on the button to select your grid size and then click on the color choice buttons to choose between simple black or a fun color changing experience!</p>
+         <p>Enjoy!</p>
+      </div>
       <div class="etchaBody">
          <div class="etchaScreen"></div>
          <div class="etchaControls">
             <button onclick="getGridNum()" class="gridSize">Grid</button>
-            <button onclick="" class="colorButton">Color</button>
+            <button onclick="setColor()" class="colorButton">Color</button>
+            <button onclick="setBlack()" class="colorButton">Black</button>
          </div>
       </div>
    </main>
