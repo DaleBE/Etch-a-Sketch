@@ -98,7 +98,8 @@ button:active {
    display: flex;
    justify-content: space-around;
    align-items: center;
-   height: 4.5rem;
+   min-height: 4.5rem;
+   max-height: 4.5rem;
 }
 
 .mainFoot {
