@@ -83,9 +83,9 @@ function chooseColor(buttonText) {
 
 function randomColor() {
 
-   const colorArray = ['#6F96C8', '#93CBA5', '#F2ED82', '#F27B35', '#F2220F'];
+   const colorArray = ['#6F96C8', '#965456', '#93CBA5', '#F2E63D', '#F2ED82', '#5587A0', '#F27B35', '#6D7B14', '#F2220F', '#BF4C41'];
 
-   const randomNum = Math.floor(Math.random() * 4);
+   const randomNum = Math.floor(Math.random() * 9);
 
    let colorChoice = colorArray[randomNum];
 
